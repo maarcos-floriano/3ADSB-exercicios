@@ -1,0 +1,29 @@
+Selection Sort:
+Palavra-chave: Menor Valor.
+Resumo: Encontre o menor valor e coloque na posição certa. Repita para os próximos menores.
+Dica Visual: Pense em alguém pegando o menor objeto de uma lista e movendo para o início, repetidamente.
+
+Selection Sort Otimizado:
+Palavra-chave: Menor Valor + Troca no Final.
+Resumo: Funciona como o Selection Sort, mas só troca o menor valor no final, após encontrar o menor da vez.
+Dica Visual: Parecido com o anterior, mas só troca o objeto quando já sabe que é o menor.
+
+Bubble Sort:
+Palavra-chave: Bolhas Subindo.
+Resumo: Compare vizinhos, se o da frente for menor, troque. O maior valor "sobe" para o final como uma bolha.
+Dica Visual: Imagine bolhas subindo na água, as maiores vão para o topo.
+
+Insertion Sort:
+Palavra-chave: Parte Ordenada e Não Ordenada.
+Resumo: Considere que o início do vetor está ordenado e vá inserindo os próximos elementos na posição correta.
+Dica Visual: Pense em organizar cartas na mão, inserindo cada nova carta na posição correta.
+
+=========================================================================================================================
+
+Este algoritmo consiste em selecionar o menor valor do vetor e colocá-lo na 1a posição. Depois o 2o menor valor do vetor e colocá-lo na 2a posição. E assim sucessivamente. Para fazer isso, utiliza 2 fors, um dentro do outro. O for de fora é para definir a posição a ser colocado o menor valor da vez. O for de dentro é para percorrer a parte não ordenada do vetor, buscando o menor valor dessa parte. Toda vez que encontra um valor menor do que a posição a ser arrumada (definida pelo for de fora), ele seta uma variável com o índice de onde se encontra o menor valor da vez. Ao terminar o for de dentro, aí sim é que processa a troca do menor valor da vez com a posição da vez a ser arrumada. → SelectionSort Otimizado,
+
+Este algoritmo consiste em percorrer o vetor, comparando 2 elementos vizinhos do vetor. Sempre que o vizinho anterior for maior do que o elemento atual, ele troca os 2 valores de lugar. Dessa forma, após a primeira percorrida no vetor, o maior valor do vetor estará posicionado no final do vetor. Repete então o mesmo algoritmo, do início ao penúltimo valor do vetor e assim sucessivamente. → Bubble Sort,
+
+Este algoritmo consiste em selecionar o menor valor do vetor e colocá-lo na 1a posição. Depois o 2o menor valor do vetor e colocá-lo na 2a posição. E assim sucessivamente. Para fazer isso, utiliza 2 fors, um dentro do outro. O for de fora é para definir a posição a ser colocado o menor valor da vez. O for de dentro é para percorrer a parte não ordenada do vetor, buscando o menor valor dessa parte. Toda vez que encontra um valor menor do que a posição a ser arrumada (definida pelo for de fora), ele já troca os valores de posição. → SelectionSort,
+
+Este algoritmo consiste em considerar que uma parte do vetor está ordenada e outra parte do vetor não está ordenada. No início, a parte ordenada do vetor consiste apenas do 1o elemento do vetor. O algoritmo então considera cada elemento da parte não ordenada do vetor e insere esse elemento na parte ordenada do vetor, um de cada vez, até que o vetor fique totalmente ordenado. → Insertion Sort.
